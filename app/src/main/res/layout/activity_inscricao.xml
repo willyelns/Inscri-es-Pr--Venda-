@@ -1,0 +1,211 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.onedoesnotsimply.inscricoes.InscricaoActivity"
+    android:background="@drawable/prevenda">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView3"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="54dp" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/editNome"
+                android:hint="Nome"
+                android:layout_marginTop="54dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignEnd="@+id/editSobrenome"
+                android:textStyle="bold"
+                android:textColor="#a0815f"
+                android:textColorHint="#a0815f" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/editSobrenome"
+                android:hint="Sobrenome"
+                android:layout_below="@+id/editNome"
+                android:layout_alignParentStart="true"
+                android:layout_alignEnd="@+id/EditRua"
+                android:textStyle="bold"
+                android:textColorHint="#a0815f"
+                android:textIsSelectable="false"
+                android:textColor="#a0815f" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                android:id="@+id/editEmail"
+                android:hint="E-mail"
+                android:textStyle="bold"
+                android:textColorHint="#a0815f"
+                android:textColor="#a0815f" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:ems="10"
+                android:id="@+id/editRg"
+                android:hint="RG"
+                android:textStyle="bold"
+                android:textColor="#a0815f"
+                android:textColorHint="#a0815f" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:ems="10"
+                android:id="@+id/editCpf"
+                android:hint="CPF"
+                android:textStyle="bold"
+                android:textColor="#a0815f"
+                android:textColorHint="#a0815f" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:ems="10"
+                android:id="@+id/editTelefone"
+                android:hint="Telefone"
+                android:textStyle="bold"
+                android:textColorHint="#a0815f"
+                android:textColor="#a0815f" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_weight="0.30">
+
+                <EditText
+                    android:layout_width="172dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/EditRua"
+                    android:hint="Rua"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="110dp"
+                    android:textColor="#a0815f"
+                    android:textColorHint="#a0815f" />
+
+                <EditText
+                    android:layout_width="97dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberSigned"
+                    android:ems="10"
+                    android:id="@+id/EditNumero"
+                    android:hint="Nº"
+                    android:layout_marginStart="262dp"
+                    android:layout_alignTop="@+id/EditRua"
+                    android:layout_alignParentStart="true"
+                    android:textColor="#a0815f"
+                    android:textColorHint="#a0815f" />
+            </RelativeLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/EditComplemento"
+                android:hint="Complemento"
+                android:textStyle="bold"
+                android:textColor="#a0815f"
+                android:textColorHint="#a0815f" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/EditBairro"
+                android:hint="Bairro"
+                android:layout_below="@+id/EditRua"
+                android:layout_alignParentStart="true"
+                android:textStyle="bold"
+                android:textColor="#a0815f"
+                android:textColorHint="#a0815f" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/EditCidade"
+                android:hint="Cidade"
+                android:layout_below="@+id/EditBairro"
+                android:layout_alignParentStart="true"
+                android:textStyle="bold"
+                android:textColor="#a0815f"
+                android:textColorHint="#a0815f" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/EditEstado"
+                android:hint="Estado"
+                android:layout_below="@+id/EditBairro"
+                android:layout_toEndOf="@+id/EditCidade"
+                android:textStyle="bold"
+                android:textColorHint="#a0815f"
+                android:textColor="#a0815f" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/EditNumCartaoCredito"
+                android:hint="Número Cartão de Credito"
+                android:textStyle="bold"
+                android:textColor="#a0815f"
+                android:textColorHint="#a0815f" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberPassword"
+                android:ems="10"
+                android:id="@+id/EditSenhaCartao"
+                android:hint="Senha Cartão de Credito"
+                android:textStyle="bold"
+                android:textColor="#a0815f"
+                android:textColorHint="#a0815f" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Inscrição"
+        android:id="@+id/textView3"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textColor="#a0815f" />
+
+</RelativeLayout>

@@ -1,0 +1,108 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    tools:context="com.example.onedoesnotsimply.inscricoes.BlankFormActivity"
+    android:background="@drawable/prevenda"
+    android:orientation="vertical"
+    android:id="@+id/layout"
+    android:weightSum="1">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView2" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/InnerLayout"
+            android:baselineAligned="false">
+
+            <EditText
+                android:layout_width="346dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/editNome"
+                android:hint="Nome"
+                android:layout_marginTop="54dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignEnd="@+id/editSobrenome" />
+
+            <EditText
+                android:layout_width="349dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/editSobrenome"
+                android:hint="Sobrenome"
+                android:layout_below="@+id/editNome"
+                android:layout_alignParentStart="true"
+                android:layout_alignEnd="@+id/EditRua" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_weight="0.30">
+
+                <EditText
+                    android:layout_width="172dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/EditRua"
+                    android:hint="Rua"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="110dp" />
+
+                <EditText
+                    android:layout_width="97dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberSigned"
+                    android:ems="10"
+                    android:id="@+id/EditNumero"
+                    android:hint="Nº"
+                    android:layout_marginStart="262dp"
+                    android:layout_alignTop="@+id/EditRua"
+                    android:layout_alignParentStart="true" />
+            </RelativeLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/EditBairro"
+                android:hint="Bairro"
+                android:layout_below="@+id/EditRua"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:layout_width="362dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/EditCidade"
+                android:hint="Cidade"
+                android:layout_below="@+id/EditBairro"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:layout_width="374dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/EditEstado"
+                android:hint="Estado"
+                android:layout_below="@+id/EditBairro"
+                android:layout_toEndOf="@+id/EditCidade" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:background="@drawable/prevenda">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/EditNomeCampo"
+        android:hint="Nome do novo campo"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Tipo do Campo:"
+        android:id="@+id/textView4"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.03"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.08"
+        android:id="@+id/GroupTipo">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Apenas números"
+            android:id="@+id/RadioNum"
+            android:checked="false"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Números e Letras"
+            android:id="@+id/RadioNumLetr"
+            android:checked="false"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+    <RelativeLayout
+        android:layout_width="369dp"
+        android:layout_height="62dp"
+        android:layout_gravity="center_horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancelar"
+            android:id="@+id/btnCancel"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/btnConfirma"
+            android:layout_marginEnd="44dp"
+            android:background="#a0815f"
+            android:textColor="#46260d" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confirmar"
+            android:id="@+id/btnConfirma"
+            android:layout_alignTop="@+id/btnCancel"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="76dp"
+            android:background="#a0815f"
+            android:textColor="#46260d" />
+    </RelativeLayout>
+
+</LinearLayout>

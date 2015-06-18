@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.raevix.formulario.BlankFormActivity">
+
+    <item android:id="@+id/action_addCampo" android:title="Novo Campo"
+        android:icon="@android:drawable/ic_menu_add"
+        android:orderInCategory="100" android:showAsAction="always|withText" />
+    <item android:id="@+id/action_salvar" android:title="Salvar Formulário"
+        android:icon="@android:drawable/ic_menu_save"
+        android:orderInCategory="100" android:showAsAction="always|withText" />
+    <item android:id="@+id/action_cancelar" android:title="Cancelar"
+        android:icon="@android:drawable/ic_menu_close_clear_cancel"
+        android:orderInCategory="100" android:showAsAction="ifRoom" />
+</menu>
